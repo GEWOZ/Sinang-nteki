@@ -3,7 +3,7 @@
 #### use Termux or Terminal  
 
  ``` 
- git clone https://github.com/elphador/bybitcoinsweeper.git
+ git clone https://github.com/GEWOZ/Sinang-nteki.git
 ```
  ``` 
  cd BybitCoinsweeper
