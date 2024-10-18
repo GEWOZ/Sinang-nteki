@@ -54,8 +54,8 @@ def play_sweeper(url):
     headers['Authorization'] = f"Bearer {data['accessToken']}"
     playgame = requests.post('https://api.bybitcoinsweeper.com/api/games/start', headers=headers).json()
     userdata = requests.get("https://api.bybitcoinsweeper.com/api/users/me", headers=headers).json()
-    min_game_time = 70
-    max_game_time = 120
+    min_game_time = 18
+    max_game_time = 35
     game_time = random.randint(min_game_time, max_game_time)
     gameid = playgame["id"]
     rewarddata = playgame["rewards"]
@@ -107,15 +107,15 @@ def print_info_box(social_media_usernames):
     print(Fore.WHITE + Style.BRIGHT + '+' + '-' * (box_width - 2) + '+')
 
 if __name__ == "__main__":
-    banner_text = "WHYWETAP"
+    banner_text = "GEWOZ"
     os.system('cls' if os.name == 'nt' else 'clear')
     create_gradient_banner(banner_text)
     social_media_usernames = [
-        ("CryptoNews", "@ethcryptopia"),
-        ("Auto Farming", "@whywetap"),
-        ("Auto Farming", "@autominerx"),
+        ("CryptoNews", "@sinangunteki"),
+        ("Auto Farming", "@bybratwa"),
+        ("Auto Farming", "@bybratwa"),
         #("", "@"),
-        ("Coder", "@demoncratos"),
+        ("Coder", "@nedenBukadarCidisin"),
     ]
      
     print_info_box(social_media_usernames)
